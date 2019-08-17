@@ -1,61 +1,85 @@
 body {
+    /*max-height: 650px;*/
     height: 100%;
     width: 960px;
     align-content: center;
     padding-left: 150px;
     margin: 0;
+   
     background-color: #dddddd;
+
 }
 
+.wrapperOverall{
+    min-height: 100%;
+    margin-bottom: -52px;
+}
 
 /*HEADER CODE START*/
-.header, .links {
+
+/*Wrapper for Header*/
+.wrapper {
     overflow: auto;
+    text-align: auto;
+    width: 100%;
+    position: relative;
+    margin-bottom: 0;
+    background-color: #ffffff;
 }
 
 .header {
-    position: relative;
-    text-align: center;
-    margin-bottom: 0;
-    width: 240px;
+    float: left;
     background-color: #4aaaa5;
 }
 
 h2.Name {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
     color: white;
+    float: left;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 40px;
+    background-color: #4aaaa5;
 }
 
 .links {
+    font-family: Arial, Helvetica, sans-serif; /*unable to find Fonts with Helvetica nue*/
+    font-size: 14px;
     position: absolute;
-    top: 5px;
+    top: 25px;
     right: 5px;
     float: right;
-    text-align: center;
     padding-bottom: -10;
+    word-spacing: 8px;
 
 }
 
-/*Wrapper for Header*/
-.wrapper {
-    background-color: #ffffff;
+.border1{
+    background-color: #cccccc;
+    width: 100%;
+    height: 2px;
 }
-/*HEADER CODE START*/
+/*END HEADER CONTENT*/
 
 
-hr {
-    margin: 0;
+.border2{
+    background-color: #dddddd;
+    width: 720px;
+    height: 2px;
 }
 
 h2.Title {  
+    font-family: Georgia, 'Times New Roman', Times, serif;
     position: relative;
     text-align: center;
     padding-top: 20px;
-    margin-left: 5px;
+    margin-left: -50px;
     width: 240px;
     color: teal;
 }
 
-/* IMAGE / TEXT LINING */
+/* IMAGE LINING */
 img {
     float: left;
     padding-top: 20px;
@@ -63,7 +87,10 @@ img {
     margin: 0 20px 20px 0;
 }
 
+
+/*TEXT LINING*/
 p {
+    font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
     text-indent: 2em;
     padding-right: 20px;
@@ -76,15 +103,25 @@ p {
 
 
 .contentIndex {
+    margin-top: 34px;
+    margin-bottom: -15px;
     height: 450px;
 }
 
-.wrapperContent {
+.wrapperContent {   
     background-color: #ffffff;
 }
 
+.border3 {
+    width: 100%;
+    height: 8px;
+    background-color: #4aaaa5;
+}
+
+
 footer {
-    margin-top: 121px;
+    margin-top: 110px;
+    height: 50px;
     color: white;
     background-color: #666666;
 }
