@@ -1,0 +1,18 @@
+form issue - spacing btwn label and input field in contact.css
+
+
+//attempted changes to the labels
+1. tried adding bottom padding - not budging
+2. tried altering bottom margin - not budging
+3. tried adding <br> too much space
+4. tried adding a div box in between label and input as a means of forcing. With a height of 0.5 and a width of 1 -- too much space. 
+
+--google
+5. tried non line breaking space - added space right before input selector - cool, but no. 
+ 
+
+//to the inputs
+1. added padding-top -- extends the input box, but not the space btwn the name and box outline. 
+
+tried changes to: input#name in css
+1. added padding-top: 10px; still extends the message box. 
