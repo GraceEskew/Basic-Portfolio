@@ -1,25 +1,7 @@
-Location: contact.css
-Issue:
-Trying to add space in form between label and the input field, to match with example.
+Left to review:
+Conflicts with text-align in portfolio.css div tag (labels)
 
-TLDR; Bottom padding isn't budging the space when added to labels, and is expanding the input box when added to inputs. Keep finding the padding solution in google, but something is causing this not to work.
+Sticky Footer/Header
+Header Name Center (looks off - check for conflicts)
 
-
-******* Attempts
-
-//attempted changes to the labels
-1. tried adding bottom padding - not budging
-2. tried altering bottom margin - not budging
-
-//attempts in html
-3. tried adding <br>  too much space
-4. tried adding a div box in between label and input as a means of forcing. With a height of 0.5 and a width of 1 in CSS-- too much space. 
-
---googled the issue. Found &nbsp... longshot, but trying anyway
-5. tried non line breaking space - added space right before input selector - cool, but not what I'm looking for. 
- 
-//to the inputs in CSS
-1. added padding-top -- extends the input box, but not the space btwn the name and box outline. 
-
-tried changes to: input#name in css
-1. added padding-top: 10px; still extends the message box. 
+Final Review

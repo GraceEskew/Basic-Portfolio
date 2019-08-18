@@ -1,11 +1,11 @@
-    body {
+body {
     /*max-height: 650px;*/
     height: 100%;
     width: 960px;
     align-content: center;
     padding-left: 150px;
     margin: 0;
-    overflow: hidden;
+    overflow: auto;
     background-color: #dddddd; 
     /*background-image: url(wheat.png);*/
 
@@ -15,6 +15,7 @@
     min-height: 100%;
     margin-bottom: -52px;
 }
+
 
 /*HEADER CODE START*/
 
@@ -86,11 +87,83 @@ h2.Title {
 }
 
 /* IMAGE LINING */
-img {
+.column {
     float: left;
-    padding-top: 20px;
-    padding-left: 16px;
-    margin: 0 20px 20px 0;
+    width: 350px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    margin-right: -165px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+}
+
+
+/* FLOATING LABELS */
+
+.h4 {
+    margin-left: 2px;
+    padding-left: 5px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+.Basics, .words, .RpgCar, .Capstone1 {
+    position: relative;
+    margin-top: -60px;
+    margin-bottom: 0;
+    z-index: 10;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    align-content: center;
+    color: #ffffff;
+    background-color: #4aaaa5;
+}
+
+
+.Basics {
+    margin-left: 0px;
+    padding-left: 3px;
+    padding-top: 15px;
+    height: 35px;
+    width: 172px;
+}
+
+.words {
+    margin-left: 0px;
+    padding-left: 12px;
+    padding-top: 15px;
+    padding-right: 8px;
+    height: 35px;
+    width: 155px;
+}
+
+
+.RpgCar {
+    margin-left: 0px;
+    padding-left: 7px;
+    padding-right: 8px;
+    padding-top: 15px;
+    height: 35px;
+    width: 160px;
+}
+
+.Capstone1 {
+    margin-left: 0px;
+    padding-left: 15px;
+    padding-right: 5px;
+    padding-top: 8px;
+    height: 42px;
+    width: 155px;
 }
 
 
@@ -107,12 +180,10 @@ p {
 }
 
 
-
-
 .contentIndex {
     margin-top: 34px;
     margin-bottom: -15px;
-    height: 450px;
+    height: 475px;
 }
 
 .wrapperContent {   
@@ -126,11 +197,12 @@ p {
 }
 
 
-footer {
+footer, .push {
     margin-top: 110px;
     height: 50px;
     color: white;
     background-color: #666666;
+    margin-bottom: 0;
 }
 
 h6 {
