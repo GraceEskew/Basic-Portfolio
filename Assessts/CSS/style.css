@@ -1,17 +1,23 @@
-    body {
+   html {
+       height: 100%;
+   }
+   
+   body {
     /*max-height: 650px;*/
-    height: 100%;
+    min-height: 100%;
     width: 960px;
     align-content: center;
     padding-left: 150px;
     margin: 0;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
     background-color: #dddddd; 
-    /*background-image: url(wheat.png);*/
-
+    /*background-image: url(.\Assessts\Images\wheat.png);*/
 }
 
 .wrapperOverall{
+    flex: 1 0 auto;
     min-height: 100%;
     margin-bottom: -52px;
 }
@@ -19,33 +25,35 @@
 /*HEADER CODE START*/
 
 /*Wrapper for Header*/
-.wrapper {
+.headerWrapper {
     overflow: auto;
     text-align: auto;
-    width: 100%;
     position: relative;
-    margin-bottom: 0;
     background-color: #ffffff;
 }
 
-.header {
+header {
     float: left;
     background-color: #4aaaa5;
 }
 
 h2.Name {
-    font-family: Georgia, 'Times New Roman', Times, serif;
     position: relative;
-    color: white;
+    height: 70px;
+    line-height: 70px;
     float: left;
     text-align: center;
-    padding-left: 15px;
-    padding-right: 40px;
+    padding-left: 18px;
+    padding-right: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: white;
     background-color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .links {
-    font-family: Arial, Helvetica, sans-serif; /*unable to find Fonts with Helvetica nue*/
+  
     font-size: 14px;
     position: absolute;
     top: 25px;
@@ -53,8 +61,35 @@ h2.Name {
     float: right;
     padding-bottom: -10px;
     word-spacing: 8px;
-
+    font-family: Arial, Helvetica, sans-serif; /*unable to find Fonts with Helvetica nue*/
 }
+
+a {
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:hover {
+    color: darkslategrey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:focus {
+    color: #ffffff;
+    background-color: #4aaaa5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:active {
+    color: #4aaaa5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:visited {
+    color:darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 
 .border1{
     background-color: #cccccc;
@@ -74,7 +109,6 @@ h2.Name {
 }
 
 h2.Title {  
-    font-family: Georgia, 'Times New Roman', Times, serif;
     position: relative;
     text-align: center;
     padding-top: 23px;
@@ -83,6 +117,7 @@ h2.Title {
     padding-left: 8px;
     width: 240px;
     color: teal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* IMAGE LINING */
@@ -96,18 +131,16 @@ img {
 
 /*TEXT LINING*/
 p {
-    font-family: Arial, Helvetica, sans-serif;
+    
     font-size: 14.5px;
     text-align: justify;
-    text-indent: 2em;
+    text-indent: 1em;
+    line-height: 1.80em;
     padding-right: 20px;
     padding-left: 20px;
     color: #777777;
-    font-family: Georgia, 'Times New Roman', Times, serif
+    font-family: Arial, Helvetica, sans-serif
 }
-
-
-
 
 .contentIndex {
     margin-top: 34px;
@@ -127,13 +160,16 @@ p {
 
 
 footer {
-    margin-top: 110px;
+    margin-bottom: 0px;
+    margin-top: auto;
+    flex-shrink: 0;
     height: 50px;
     color: white;
     background-color: #666666;
 }
 
 h6 {
+    
     color: #b7b0a2;
     text-align: center;
 }

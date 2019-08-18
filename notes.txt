@@ -1,7 +1,4 @@
-Left to review:
-Conflicts with text-align in portfolio.css div tag (labels)
+Review before Tuesday:
 
-Sticky Footer/Header
-Header Name Center (looks off - check for conflicts)
-
-Final Review
+Sticky header
+Link behavior in css
